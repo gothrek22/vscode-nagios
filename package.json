@@ -2,7 +2,7 @@
     "name": "nagios",
     "displayName": "Nagios",
     "description": "nagios",
-    "version": "0.0.1",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.28.0"
     },
@@ -10,7 +10,7 @@
         "Programming Languages"
     ],
     "icon": "service_512.png",
-    "publisher": "gothrek22",
+    "publisher": "tmlo",
     "repository": "https://github.com/gothrek22/vscode-nagios.git",
     "contributes": {
         "languages": [{
