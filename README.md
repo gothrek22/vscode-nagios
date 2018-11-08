@@ -6,9 +6,13 @@ Syntax highlight for Nagios syntax highlighting. Shamelessely stolen from https:
 
 * Syntax highlight for nagios configuration
 
-### 1.0.2
+### 1.0.3
 
 Added some snippets
+
+### 1.0.2
+
+Fixed ini style highlight
 
 ### 1.0.1
 
