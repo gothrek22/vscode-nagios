@@ -1,0 +1,28 @@
+{
+    "name": "nagios",
+    "displayName": "Nagios",
+    "description": "nagios",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "icon": "service_512.png",
+    "publisher": "gothrek22",
+    "repository": "https://github.com/gothrek22/vscode-nagios.git",
+    "contributes": {
+        "languages": [{
+            "id": "nagios",
+            "aliases": ["Nagios", "nagios"],
+            "extensions": [".cfg"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nagios",
+            "scopeName": "source.nagios",
+            "path": "./syntaxes/nagios.tmLanguage"
+        }]
+    }
+}
