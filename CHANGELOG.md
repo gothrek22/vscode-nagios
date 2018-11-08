@@ -1,7 +1,14 @@
-# Change Log
-All notable changes to the "nagios" extension will be documented in this file.
+### Version 1.0.4
+- Updated Readme
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Version 1.0.3
+- Added some snippets
 
-## [Unreleased]
-- Initial release
+### Version 1.0.2
+- Fixed ini style highlight
+
+### Version 1.0.1
+- Added highlight for ini style cfg files
+
+### Version 1.0.0
+- Initial release of Nagios
