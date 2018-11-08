@@ -2,7 +2,7 @@
     "name": "nagios",
     "displayName": "Nagios",
     "description": "nagios",
-    "version": "1.0.4",
+    "version": "1.1.0",
     "engines": {
         "vscode": "^1.28.0"
     },

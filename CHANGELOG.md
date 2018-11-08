@@ -1,3 +1,6 @@
+### Version 1.1.0
+- Updated License and Readme
+
 ### Version 1.0.4
 - Updated Readme
 
