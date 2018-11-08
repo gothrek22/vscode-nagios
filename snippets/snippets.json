@@ -1,0 +1,28 @@
+{
+    "Service template": {
+        "prefix": "service",
+        "body": [
+            "define service {",
+            "  use",
+            "  hostgroup_name",
+            "  service_description",
+            "  check_command check_nrpe!",
+            "  notifications_enabled 1",
+            "}"
+        ],
+        "description": "Basic service definition"
+    },
+    "Host template": {
+        "prefix": "host",
+        "body": [
+            "define host {",
+            "  use",
+            "  host_name ",
+            "  alias ",
+            "  address ",
+            "  hostgroups ",
+            "}"
+        ],
+        "description": "Basic host definition"
+    }
+}

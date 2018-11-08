@@ -1,95 +1,16 @@
 {
-    "name": "Nagios",
-    "scopeName": "source.nagios",
-    "fileTypes": [
-        "cfg"
-    ],
-    "patterns": [{
-            "name": "comment.line.number-sign.nagios",
-            "match": "^[\\s]*#.*",
-            "comment": "# comments"
-        },
-        {
-            "include": "#variable"
-        },
-        {
-            "name": "entity.name.section.nagios",
-            "begin": "^[\\s]*(define)[\\s]+([A-Za-z0-9_]+)[\\s]*(\\{)",
-            "beginCaptures": {
-                "1": {
-                    "name": "storage.modifier.nagios"
-                },
-                "2": {
-                    "name": "support.type.nagios"
-                },
-                "3": {
-                    "name": "constant.character.nagios"
-                }
-            },
-            "patterns": [{
-                    "include": "$self"
-                },
-                {
-                    "include": "#variable"
-                },
-                {
-                    "include": "#separator"
-                },
-                {
-                    "name": "keyword.other.nagios",
-                    "match": "^[\\s]*use[\\s]+([A-Za-z0-9_-]+)",
-                    "captures": {
-                        "1": {
-                            "name": "support.variable.nagios"
-                        }
-                    }
-                },
-                {
-                    "name": "keyword.other.nagios",
-                    "match": "^[\\s]*[A-Za-z0-9_]+[\\s]"
-                },
-                {
-                    "name": "comment.line.semi-colon.nagios",
-                    "match": ";.*",
-                    "comment": "In-line comments"
-                }
-            ],
-            "end": "\\}",
-            "endCaptures": {
-                "0": {
-                    "name": "constant.character.nagios"
-                }
-            }
-        },
-        {
-            "name": "string.quoted.double.nagios",
-            "begin": "\"",
-            "beginCaptures": {
-                "0": {
-                    "name": "string.quoted.double.nagios"
-                }
-            },
-            "patterns": [{
-                    "include": "#variable"
-                },
-                {
-                    "include": "#separator"
-                }
-            ],
-            "end": "\""
-        }
-    ],
-    "repository": {
-        "variable": {
-            "name": "support.variable.nagios",
-            "match": "\\$([A-Za-z][A-Za-z0-9_]+)\\$",
-            "comment": "Variables like $SERVICESTATE$, $USER1$ etc"
-        },
-        "separator": {
-            "name": "constant.character.nagios",
-            "match": "!",
-            "comment": "check_command separators"
-        }
+    "comments": {
+        "lineComment": "#",
     },
-    "uuid": "a8870a27-4f36-4aa7-8f7b-34a87060247d"
+    "brackets": [
+        ["{", "}"],
+    ],
+    "autoClosingPairs": [
+        ["{", "}"],
+        ["\"", "\""]
+    ],
+    "surroundingPairs": [
+        ["\"", "\""],
+        ["'", "'"]
+    ]
 }

@@ -2,7 +2,7 @@
     "name": "nagios",
     "displayName": "Nagios",
     "description": "nagios",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "engines": {
         "vscode": "^1.28.0"
     },
@@ -23,6 +23,10 @@
             "language": "nagios",
             "scopeName": "source.nagios",
             "path": "./syntaxes/nagios.tmLanguage"
+        }],
+        "snippets": [{
+            "language": "nagios",
+            "path": "./snippets/snippets.json"
         }]
     }
 }
